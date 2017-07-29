@@ -1,7 +1,24 @@
-# react-scripts
+### What is this:
+  fork of [create-react-app scripts settings](https://github.com/facebookincubator/create-react-app/tree/master/packages/react-scripts) with addition of browsersync and SASS (node-sass-chokidar) into workflow.
 
-This package includes scripts and configuration used by [Create React App](https://github.com/facebookincubator/create-react-app).<br>
-Please refer to its documentation:
+#### disclaimer:
+  please note that I use node-sass-chokidar in package.json like this:
+  ````
+  "node-sass": "https://github.com/michaelwayman/node-sass-chokidar/tarball/master",
+  ````
+  reason is pointed in create-react-app manual - [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc)
 
-* [Getting Started](https://github.com/facebookincubator/create-react-app/blob/master/README.md#getting-started) – How to create a new app.
-* [User Guide](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md) – How to develop apps bootstrapped with Create React App.
+### How to use it:
+pass a name of desired custom react-scripts to `--scripts-version` key like so:
+
+````
+  create-react-app my-app --scripts-version rulsky-react-scripts
+````
+
+
+### npm registry
+  link to npmjs: [rulsky-react-scripts](https://www.npmjs.com/package/rulsky-react-scripts)
+
+
+### Original documentation:
+  in facebook's repo - [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/README.md)
