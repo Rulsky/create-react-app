@@ -37,6 +37,7 @@ const {
   prepareUrls,
 } = require('react-dev-utils/WebpackDevServerUtils');
 const openBrowser = require('react-dev-utils/openBrowser');
+const browserSync = require('browser-sync');
 const paths = require('../config/paths');
 const config = require('../config/webpack.config.dev');
 const createDevServerConfig = require('../config/webpackDevServer.config');
@@ -84,7 +85,7 @@ choosePort(HOST, DEFAULT_PORT)
         clearConsole();
       }
       console.log(chalk.cyan('Starting the development server...\n'));
-      openBrowser(urls.localUrlForBrowser);
+      browserSync.init({proxy: urls.localUrlForBrowser, open: true, notify: false, browser: "google chrome"});
     });
 
     ['SIGINT', 'SIGTERM'].forEach(function(sig) {
