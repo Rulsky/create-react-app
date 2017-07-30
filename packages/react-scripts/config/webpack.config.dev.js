@@ -202,6 +202,7 @@ module.exports = {
                 loader: require.resolve('sass-loader'),
                 options: {
                   sourceMap: true,
+                  includePaths: [ paths.appSrc, ],
                 }
               },
               {
