@@ -1,12 +1,14 @@
 ### What is this:
-  fork of [create-react-app scripts settings](https://github.com/facebookincubator/create-react-app/tree/master/packages/react-scripts) with addition of browsersync and SASS (node-sass-chokidar) into workflow.
+  fork of [create-react-app scripts settings](https://github.com/facebookincubator/create-react-app/tree/master/packages/react-scripts) with addition of browsersync and SASS (node-sass) into workflow.
 
 #### disclaimer:
-  please note that I use node-sass-chokidar in package.json like this:
+  please note that I tried to use node-sass-chokidar in package.json like this:
   ````
   "node-sass": "https://github.com/michaelwayman/node-sass-chokidar/tarball/master",
   ````
-  reason is pointed in create-react-app manual - [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc)
+  because of this reason [pointed in create-react-app manual](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc)
+
+  But it didn't work.
 
 ### How to use it:
 pass a name of desired custom react-scripts to `--scripts-version` key like so:
